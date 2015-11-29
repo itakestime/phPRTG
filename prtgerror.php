@@ -95,7 +95,7 @@ foreach($xml->item as $item) {
       	loginModal();
 
  } else { 
- 	pauseModal();
+ 	pauseModal($objid);
   } ?>
  <!--Acknowledge notification modal-->
  <div id="<?php echo $objid;?>_ack" class="modal fade" role="dialog">
@@ -115,7 +115,7 @@ foreach($xml->item as $item) {
       <?php if (empty($_SESSION["password"])){ 
       	loginModal();
 } else {
-      acknowledgeModal();
+      acknowledgeModal($objid);
 } ?>
       
 </td>
