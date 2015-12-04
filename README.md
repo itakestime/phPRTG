@@ -15,8 +15,6 @@ Current features:
 Once downloaded, put all files onto a web server.
 
 
-
-
 To connect to the API, you will need a username and password.
 I recommend creating a read-only account to access the API.
 Passhash the password, you can see how to do this in the API pages of your PRTG server.
@@ -26,13 +24,11 @@ Add your PRTG server to the config file.
 
 
 
-
-
-
 Requirements:
 
--php
--curl
+*php
+
+*curl
 
 
 
