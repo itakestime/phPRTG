@@ -5,11 +5,12 @@ My bunch of PHP pages to interface with PRTG's API.
 
 Current features:
 
-* Listing all failures and warnings in the system
+* Listing all failures and warnings in the system (limited to 500)
 * Showing two day and thirty day graphs (click the device)
 * Authentication against the PRTG API
 * Ability to acknowledge and pause sensors (once authenticated)
 * Link to the object in PRTG (click the object ID)
+* Search for errors or warnings
 
 
 
