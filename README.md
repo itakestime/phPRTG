@@ -27,7 +27,8 @@ Add your PRTG server to the config file.
 
 Requirements:
 
-php and curl
+* php
+* curl
 
 
 
