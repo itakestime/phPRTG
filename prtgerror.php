@@ -31,7 +31,8 @@ if (isset($_POST['message_pause'])) {
 
 
 //get the XML file
-$xml = getXML($xml_errorwarning,$prtg_ro_userpass);
+$xml1 = getXML($xml_error,$prtg_ro_userpass);
+$xml2 = getXML($xml_warning,$prtg_ro_userpass);
 
 
 //Function to parse the XML
@@ -218,7 +219,8 @@ a:visited {
 				<th>DowntimeSince</th>
 				<th>Message</th>
 			</tr>
-				<?php showErrors($xml)?>
+				<?php showErrors($xml1)?>
+				<?php showErrors($xml2)?>
 		</div>
 	</table>
 <!--Search box -->

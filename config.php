@@ -9,27 +9,14 @@ $prtg_ro_pass = '';
 $prtg_server = '';
 
 
-
-
-//Combine the two into the correct string
-$prtg_ro_userpass = '&username='.$prtg_ro_user.'&passhash='.$prtg_ro_pass;
-
-
-//To get XML with errors and warnings in system
-$xml_errorwarning = '/api/table.xml?content=sensors&columns=objid,probe,downtimesince,device,sensor,lastvalue,status,message,priority&filter_status=5&count=2000&filter_status=4&sortby=-status';
-
-
-
-
-
 //Static code
-
 
 //Combine the username and passhash into the correct format
 $prtg_ro_userpass = '&username='.$prtg_ro_user.'&passhash='.$prtg_ro_pass;
 
 //API to get all of the errors and warnings in the system(Limited to 2000)
-$xml_errorwarning = '/api/table.xml?content=sensors&columns=objid,probe,downtimesince,device,sensor,lastvalue,status,message,priority&filter_status=5&count=2000&filter_status=4&sortby=-status';
+$xml_error = '/api/table.xml?content=sensors&columns=objid,probe,downtimesince,device,sensor,lastvalue,status,message,priority&filter_status=5&count=2000&sortby=priority';
+$xml_warning = '/api/table.xml?content=sensors&columns=objid,probe,downtimesince,device,sensor,lastvalue,status,message,priority&filter_status=4&count=2000&sortby=priority';
 
 //Link to get to PRTG sensor
 $sensor_id_url = '/sensor.htm?id=';
