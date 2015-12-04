@@ -1,6 +1,6 @@
 # phPRTG
 
-So this my bunch php pages to interface with PRTG's API.
+My bunch of PHP pages to interface with PRTG's API.
 
 
 Current features:
