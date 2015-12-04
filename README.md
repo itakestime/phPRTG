@@ -6,9 +6,10 @@ So this my bunch php pages to interface with PRTG's API.
 Current features:
 
 * Listing all failures and warnings in the system
-* Showing two day and thirty day graphs when clicking on the device
+* Showing two day and thirty day graphs (click the device)
 * Authentication against the PRTG API
 * Ability to acknowledge and pause sensors (once authenticated)
+* Link to the object in PRTG (click the object ID)
 
 
 
