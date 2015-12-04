@@ -13,12 +13,8 @@ if (!empty($_GET['logoff'])){
 	exit();
 }
 
-//Get username and password from previous page
-$username =  $_POST["username"];
-$password =  $_POST["password"];
-
 //Passhash the password so that it can be used with the PRTG API, and for security reasaons
-$passhash = passhash($username,$password);
+$passhash = passhash($_POST["username"],$_POST["password"]);
 
 
 //Check if login is valid or not. If invalid, return to login page and prompt user to re-enter username and password

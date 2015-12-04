@@ -27,6 +27,8 @@
 
 <?php 
 
+
+//Check if username and password were correct
 if (!empty($_GET["error"])){
 
 	?>

@@ -121,7 +121,7 @@ You need to be logged in to perform this action.</p>
 <?php 
 }
 
-function pauseModal() { ?>
+function pauseModal($objid) { ?>
 
 <form action="prtgerror.php" method="post">
 
@@ -148,7 +148,7 @@ function pauseModal() { ?>
       </div>
 <?php }
 
-function acknowledgeModal() { ?>
+function acknowledgeModal($objid) { ?>
 
 <form action="prtgerror.php" method="post">
 
