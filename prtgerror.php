@@ -75,8 +75,6 @@ foreach($xml->item as $item) {
 					</button>
 				</div>
 		
-
-
 <!--Call the Pause modal-->
 	<div id="<?php echo $objid;?>_pause" class="modal fade" role="dialog">
 	<div class="modal-dialog">
@@ -89,7 +87,6 @@ foreach($xml->item as $item) {
       </div>
       <div class="modal-body">
       
-
       <!--Check if logged in-->
       <?php if (empty($_SESSION["password"])){
       	//Show the login modal if not logged in.
@@ -110,8 +107,6 @@ foreach($xml->item as $item) {
       </div>
       <div class="modal-body">
 
-
-
       <!--Check if logged in-->
       <?php if (empty($_SESSION["password"])){ 
       	loginModal();
@@ -123,7 +118,6 @@ foreach($xml->item as $item) {
 		<?php
 		echo '<td style="color:'.$font_colour.'">'.$probe.'</td>';
 		?>
-
 
 	<td>
 	<a  href="modal.php?id=<?php echo $objid;?>" style="color: <?php echo $font_colour;?>" data-toggle="modal" data-target="#<?php echo $objid;?>_graph"><?php echo $device;?></a>
@@ -148,14 +142,9 @@ foreach($xml->item as $item) {
 		echo '<td style="color:'.$font_colour.'">'.$priority.'</td>';
 		echo '<td style="color:'.$font_colour.'">'.$downtimesince.'</td>';
 		echo '<td style="white-space:nowrap;color:'.$font_colour.'">'.$message.'</td>';
-
 	}
-	
-
 	}
 ?>
-
-
 <!--HTML Section -->
 <html>
 <head>
@@ -199,14 +188,12 @@ a:visited {
 </div>
 	
 	<?php if (!empty($_SESSION["password"])){
-
 	echo '<a href="session.php?logoff=1">Log Off</a>';
 }
 	else {
 		echo '<a href="login.php">Login</a>';
 	}
 ?>
-</a>
 	<table class="table" style="width:100%" id="tblData">
 		<div class="table-responsive">
 			<tr style="background-color:#efefef">
@@ -224,6 +211,7 @@ a:visited {
 				<?php showErrors($xml2)?>
 		</div>
 	</table>
+
 <!--Search box -->
 <script>
 $(document).ready(function()
@@ -258,6 +246,8 @@ function searchTable(inputVal)
 }
 </script>
 
+
+<!--Countdown timer-->
 <script type="text/javascript" language="JavaScript">
  
         var secs;
