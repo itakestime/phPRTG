@@ -133,12 +133,12 @@ function pauseModal($objid) { ?>
       <br>
    <!--Reason for pause -->
       <p style="float:left;width:200px;">Reason for pausing:</p>
-      <textarea style="float:right;" type="text" id="message_pause" name="message_pause"></textarea>
-      <br>
+      <textarea style="float:right;" class="form-control" rows="2" type="text" id="message_pause" name="message_pause"></textarea>
       <br>
       <br>
       <br>
 		<div class="modal-footer">
+		<br>
       <input type="submit" class="btn btn-primary" value="Pause">
       </div>
 </form>
@@ -155,12 +155,13 @@ function acknowledgeModal($objid) { ?>
       <input type="hidden" id="objid" name="objid" value="<?php echo $objid;?>">
 
       <p style="float:left;width:200px;">Reason for acknowledging:</p>
-      <textarea style="float:right;" type="text" id="message_ack" name="message_ack"></textarea>
+      <textarea style="float:right;" class="form-control" rows="2" type="text" id="message_ack" name="message_ack"></textarea>
       <br>
       <br>
       <br>
       <br>
 		<div class="modal-footer">
+		<br>
       <input type="submit" class="btn btn-primary" value="Acknowledge">
       </div>
 </form>
